@@ -1,10 +1,54 @@
 <div>
-    <h1 class="text-lg font-bold">About</h1>
-    <p class="text-base">Lorem ipsum dolor <span highlight>sit amet consectetur adipisicing elit.</span> Facere vel delectus numquam aliquid itaque nulla. Alias fugiat est, voluptatem commodi soluta, ad et eveniet odit rem perferendis porro, quidem iste.</p>
-    <p class="text-base">Numero de clientes  @if (duration() > 0) {
-<app-counter [duration]="duration()" [message]="message()"/>
-}</p>
-    <div>
-        <app-wave-audio audioUrl="assets/audio.mp3" />
-    </div>
 </div>
+<section class="py-16 px-4 sm:px-8 lg:px-16" id="sobre-nosotros">
+  <div class="max-w-7xl mx-auto">
+    <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">Sobre Nosotros</h1>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Misión -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Misión</h2>
+        <p class="text-gray-600 leading-relaxed">
+          En <strong>Ness</strong>, nuestra misión es brindar ropa de alta calidad que combine estilo, comodidad y sostenibilidad. Nos esforzamos por empoderar a nuestros clientes para que se expresen con confianza.
+        </p>
+      </div>
+
+      <!-- Visión -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Visión</h2>
+        <p class="text-gray-600 leading-relaxed">
+          Aspiramos a ser una marca líder en moda, reconocida por nuestra innovación, sostenibilidad y compromiso con nuestros clientes. Queremos inspirar confianza y responsabilidad en cada paso.
+        </p>
+      </div>
+
+      <!-- Historia -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Historia</h2>
+        <p class="text-gray-600 leading-relaxed">
+          Fundada en [año], <strong>Ness</strong> comenzó como un pequeño emprendimiento local. Con el tiempo, crecimos hasta convertirnos en un referente en la moda, siempre enfocados en calidad e inclusión.
+        </p>
+      </div>
+    </div>
+
+    <!-- Valores y Compromiso -->
+    <div class="mt-16 space-y-8">
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Nuestros Valores</h2>
+        <ul class="list-disc list-inside text-gray-600">
+          <li><strong>Calidad</strong>: Prendas fabricadas con los más altos estándares.</li>
+          <li><strong>Sostenibilidad</strong>: Uso de materiales reciclados y procesos responsables.</li>
+          <li><strong>Inclusividad</strong>: Diseños para todas las tallas, edades y estilos.</li>
+          <li><strong>Innovación</strong>: Exploración constante de tendencias y tecnologías.</li>
+        </ul>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Compromiso con la Comunidad</h2>
+        <p class="text-gray-600 leading-relaxed">
+          En <strong>Ness</strong>, dedicamos parte de nuestras ganancias a apoyar comunidades vulnerables y proyectos de sostenibilidad. Nuestro objetivo es marcar una diferencia en el mundo, un paso a la vez.
+        </p>
+      </div>
+    </div>
+    <app-counter [duration]="duration()" [message]="message()"/>
+  </div>
+</section>
