@@ -20,4 +20,9 @@ export class HeaderComponent {
   toogleSideMenu() {
     this.hideSideMenu.update(prevState => !prevState);
   }
+  isNavbarOpen = false;
+
+  toggleNavbar() {
+    this.isNavbarOpen = !this.isNavbarOpen;
+}
 }
